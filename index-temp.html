@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter - Temperature</title>
+    <script src="logic-temp.js"></script>
+    <link rel="stylesheet" href="style-second.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title"> <a href="/CONVERSOR/index.html"> MY <br> CONVERTER</h1></a>
+        <ul class="header-list">
+            <li class="header-list-item"> <a href="/CONVERSOR/index-speed.html">Speed</a></li>
+            <li class="header-list-item"> <a href="/CONVERSOR/index-temp.html">Temperature</a></li>
+            <li class="header-list-item"> <a href="/CONVERSOR/index-length.html">Length</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <h1 class="title" id="title" >Temperature Converter</h1>
+        <div class="mechanism" id="mechanism">
+            <input oninput="temperatureChanger()" class="input" id="input" type="number" placeholder="  Temperature">
+            <select oninput="temperatureChanger()" class="data1" id="data1">
+                <option class="data1-item" id="data1-item" value="celcius">Celcius</option>
+                <option class="data1-item" id="data1-item" value="kelvin">Kelvin</option>
+                <option class="data1-item" id="data1-item" value="fahrenheit">Fahrenheit</option>
+            </select>
+            to
+            <select oninput="temperatureChanger()" class="data2" id="data2">
+                <option class="data1-item" id="data1-item" value="celcius">Celcius</option>
+                <option class="data1-item" id="data1-item" value="kelvin">Kelvin</option>
+                <option class="data1-item" id="data1-item" value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <div class="result" id="result"></div>
+    </main>
+
+    <footer>
+        <p class="acknowledgment">WEBSITE PRODUZIDO POR <a href="www.linkedin.com.br/in/gabecgodoy">GABRIEL GODOY</a></p>
+    </footer>
+    
+</body>
+</html>
